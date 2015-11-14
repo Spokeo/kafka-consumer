@@ -93,6 +93,7 @@ module Kafka
 
     def self.distribute_partitions(instances, partitions)
       return {} if instances.empty?
+      instances = instances.sort_by { |i| i.id }
       partitions_per_instance = partitions.length.to_f / instances.length.to_f
 
       partitions.group_by.with_index do |partition, index|
