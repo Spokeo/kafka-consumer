@@ -1,5 +1,7 @@
 # Kafka::Consumer
 
+**Forked from https://github.com/wvanbergen/kafka-consumer**
+
 High-level Kafka consumer for Ruby. Uses Zookeeper to manage load balancing, failover, and offset management.
 
 A consumer group consists of multiple instances of the same consumer. Every instance registers itself in
@@ -44,8 +46,7 @@ end
 
 ## Contributing
 
-1. Fork it ( https://github.com/wvanbergen/kafka-consumer/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
+1. Create your feature branch (`git checkout -b my-new-feature`)
+2. Commit your changes (`git commit -am 'Add some feature'`)
+3. Push to the branch (`git push origin my-new-feature`)
+4. Create a new Pull Request
